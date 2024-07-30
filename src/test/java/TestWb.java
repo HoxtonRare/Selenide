@@ -19,7 +19,6 @@ public class TestWb {
 
     @Test
     void test() throws InterruptedException {
-
         $(By.xpath("//div[@class='main-page__content']/descendant::article[1]/div/a")).shouldBe(enabled);
         $(By.id("searchInput")).setValue("мобильный телефон");
         Thread.sleep(1000);
